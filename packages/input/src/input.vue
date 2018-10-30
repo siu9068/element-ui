@@ -267,7 +267,6 @@
       handleComposition(event) {
         if (event.type === 'compositionend') {
           this.isOnComposition = false;
-          this.handleInput(event);
         } else {
           const text = event.target.value;
           const lastCharacter = text[text.length - 1] || '';
