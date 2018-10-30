@@ -265,13 +265,9 @@
         this.$emit('focus', event);
       },
       handleComposition(event) {
-        if (event.type === 'compositionend') {
-          this.isOnComposition = false;
-        } else {
-          const text = event.target.value;
-          const lastCharacter = text[text.length - 1] || '';
-          this.isOnComposition = !isKorean(lastCharacter);
-        }
+        const text = event.target.value;
+        const lastCharacter = text[text.length - 1] || '';
+        this.isOnComposition = !isKorean(lastCharacter);
       },
       handleInput(event) {
         const value = event.target.value;
