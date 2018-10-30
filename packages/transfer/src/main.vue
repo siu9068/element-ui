@@ -136,7 +136,7 @@
         const key = this.props.key;
         return this.data.reduce((o, cur) => (o[cur[key]] = cur) && o, {});
       },
-  
+
       sourceData() {
         return this.data.filter(item => this.value.indexOf(item[this.props.key]) === -1);
       },
