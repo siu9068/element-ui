@@ -13,10 +13,10 @@ Object.keys(Components).forEach(function(key) {
   externals[`element-ui-kr2/packages/${key}`] = `element-ui-kr2/lib/${key}`;
 });
 
-externals['element-ui-kr/src/locale'] = 'element-ui-kr2/lib/locale';
+externals['element-ui-kr2/src/locale'] = 'element-ui-kr2/lib/locale';
 utilsList.forEach(function(file) {
   file = path.basename(file, '.js');
-  externals[`element-ui-kr/src/utils/${file}`] = `element-ui-kr2/lib/utils/${file}`;
+  externals[`element-ui-kr2/src/utils/${file}`] = `element-ui-kr2/lib/utils/${file}`;
 });
 mixinsList.forEach(function(file) {
   file = path.basename(file, '.js');
