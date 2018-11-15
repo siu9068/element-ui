@@ -268,8 +268,8 @@
         const text = event.target.value;
         const lastCharacter = text[text.length - 1] || '';
         this.isOnComposition = !isKorean(lastCharacter);
-        if(event.type === 'compositionend') {
-            this.isOnComposition = lastCharacter === '' ? false : this.isOnComposition;
+        if (event.type === 'compositionend') {
+          this.isOnComposition = lastCharacter === '' ? false : this.isOnComposition;
         }
       },
       handleInput(event) {
