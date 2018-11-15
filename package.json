@@ -1,6 +1,6 @@
 {
   "name": "element-ui-kr2",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "npm kr-input err fix",
   "main": "lib/element-ui.common.js",
   "files": [
